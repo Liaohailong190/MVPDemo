@@ -35,6 +35,6 @@ public class LoginPresenterImpl extends BasePresenter<LoginContract.LoginView> i
                     getView().onLoginFailure("出错了！");
                 }
             }
-        }, 8000);
+        }, 3000);
     }
 }
