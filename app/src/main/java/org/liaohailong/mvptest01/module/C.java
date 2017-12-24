@@ -1,4 +1,4 @@
-package org.liaohailong.mvptest01.model;
+package org.liaohailong.mvptest01.module;
 
 /**
  * 常量类

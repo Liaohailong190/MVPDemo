@@ -1,4 +1,4 @@
-package org.liaohailong.mvptest01.bean;
+package org.liaohailong.mvptest01.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.liaohailong.mvptest01.base.BaseActivity;
-import org.liaohailong.mvptest01.model.login.LoginActivity;
+import org.liaohailong.mvptest01.module.login.LoginActivity;
 
 public class MainActivity extends BaseActivity {
 
