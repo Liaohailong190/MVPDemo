@@ -1,8 +1,9 @@
-package org.liaohailong.mvptest01;
+package org.liaohailong.mvptest01.module;
 
 import android.os.Bundle;
 import android.view.View;
 
+import org.liaohailong.mvptest01.R;
 import org.liaohailong.mvptest01.base.BaseActivity;
 import org.liaohailong.mvptest01.module.login.LoginActivity;
 
