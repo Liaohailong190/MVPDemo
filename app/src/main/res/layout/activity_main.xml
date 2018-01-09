@@ -10,5 +10,9 @@
         android:layout_height="wrap_content"
         android:text="跳转LoginActivity" />
 
-
+    <Button
+        android:id="@+id/jump_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转ListActivity" />
 </LinearLayout>

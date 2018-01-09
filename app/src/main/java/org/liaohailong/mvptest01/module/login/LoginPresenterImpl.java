@@ -13,13 +13,6 @@ import java.util.Random;
  */
 
 public class LoginPresenterImpl extends BasePresenter<LoginContract.LoginView> implements LoginContract.LoginPresenter {
-    private Handler mHandler;
-    private Random mRandom;
-
-    public LoginPresenterImpl() {
-        mHandler = new Handler();
-        mRandom = new Random();
-    }
 
     @Override
     public void login(final String name, final int age, final boolean man) {

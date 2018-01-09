@@ -1,9 +1,12 @@
 package org.liaohailong.mvptest01.base;
 
+import android.os.Handler;
+
 import java.lang.ref.WeakReference;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.Random;
 
 /**
  * 所有控制层基类
@@ -13,6 +16,9 @@ import java.lang.reflect.Proxy;
 public class BasePresenter<V> implements IPresenter<V> {
     private WeakReference<V> mView;
     private V mProxyView;
+
+    protected Handler mHandler = new Handler();
+    protected Random mRandom = new Random();
 
     @Override
     public void attachView(V view) {

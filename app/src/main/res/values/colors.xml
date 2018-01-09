@@ -3,4 +3,288 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+    <!-- 浅黑色字体 -->
+    <color name="text_body_color">@color/common_black</color>
+    <color name="text_content_color">@color/common_black</color>
+    <!-- 描述字体颜色 -->
+    <color name="text_describe_color">@color/common_gray</color>
+
+    <!-- actionbar 背景色 -->
+    <color name="tab_bg_color">#f7f7f7</color>
+    <color name="tab_bg_color_night">@color/common_black</color>
+    <color name="half_black">#9f000000</color>
+    <color name="color_white">#e4e4e4</color>
+
+    <drawable name="tab_bg_drawable">#ffffff</drawable>
+
+    <color name="bright_gray">@color/eee_gray</color>
+    <color name="ccc_gray">#cccccc</color>
+    <color name="eee_gray">#eeeeee</color>
+    <color name="dark_gray">#666666</color>
+    <color name="black_gray">#505050</color>
+    <color name="item_dark_gray">#e5e5e5</color>
+    <color name="f9f9f9_gray">#F9F9F9</color>
+
+    <!-- 应用统一黑色 -->
+    <color name="common_black">#333333</color>
+
+    <drawable name="common_black">#333333</drawable>
+    <!-- 应用统一灰色 -->
+    <color name="common_gray">#999999</color>
+
+    <!-- 统一蓝色 -->
+    <color name="common_blue">#14A8F4</color>
+    <color name="_20_common_blue">#2014A8F4</color>
+    <color name="_40_common_blue">#4014A8F4</color>
+    <color name="common_blue_night">#0A547A</color>
+
+    <!-- 统一黄色 -->
+    <color name="common_yellow">#ffaa00</color>
+    <color name="half_yellow">#80ffaa00</color>
+
+    <!-- 应用统一绿色 -->
+    <color name="common_green">#17b03e</color>
+    <drawable name="common_green">#17b03e</drawable>
+
+    <!-- 应用统一橘色 -->
+    <color name="common_orange">#FF8236</color>
+    <drawable name="common_orange">#FF8236</drawable>
+    <!-- tab 栏颜色 -->
+    <color name="tab_color">#fafafa</color>
+
+    <!-- 应用统一白色 -->
+    <color name="common_white">#ffffff</color>
+    <drawable name="common_white">#ffffff</drawable>
+    <color name="btn_pressed_gray">#ebebeb</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <!-- 标题栏背景色 -->
+    <color name="actionbar_bg_color">#f8f8f8</color>
+    <!-- 应用统一红色 -->
+    <color name="common_red">#eb3241</color>
+    <!-- 分割线的颜色 -->
+    <color name="common_line_color">@color/bright_gray</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="click_color">#1c000000</color>
+    <color name="click_dark_color">#7c000000</color>
+
+    <drawable name="null_drawable">#00ffffff</drawable>
+    <drawable name="fff_drawable">#ffffff</drawable>
+    <drawable name="ccc_drawable">#CCCCCC</drawable>
+    <drawable name="ddd_drawable">#DDDDDD</drawable>
+    <drawable name="ec_drawable">#ececec</drawable>
+    <drawable name="eee_drawable">#eeeeee</drawable>
+    <drawable name="f9f9_drawable">@color/default_gray_70</drawable>
+    <drawable name="half_black_drawable">@color/half_black</drawable>
+    <drawable name="bright_gray_drawable">@color/bright_gray</drawable>
+    <drawable name="common_line_drawable">#dddddd</drawable>
+    <drawable name="click_drawable">@color/click_color</drawable>
+    <drawable name="click_dark_drawable">@color/common_black</drawable>
+    <drawable name="fff_half_drawable">#B3ffffff</drawable>
+
+
+    <color name="action_bar_text_color">@color/common_white</color>
+    <color name="action_menu_text_color">@color/common_white</color>
+
+
+    <color name="colorPrimaryTextWhite">#ffffffff</color>
+    <color name="colorPrimaryTextBlack">#df000000</color>
+
+    <color name="colorSubTextWhite">#b3ffffff</color>
+    <color name="colorSubTextBlack">#86000000</color>
+
+
+    <!-- 主题相关 白天-->
+    <color name="theme_guan_fang_lan">#1385EF</color>
+    <color name="theme_jing_dian_hong">#E62534</color>
+    <color name="theme_chi_gang_hei">#333333</color>
+    <color name="theme_wen_qing_ju">#FFA000</color>
+    <color name="theme_lv_cao_di">#8BC34A</color>
+    <color name="theme_chen_jing_lv">#4CAF50</color>
+    <color name="theme_ji_qing_zi">#673AB7</color>
+    <color name="theme_huo_mei_gui">#B027AE</color>
+    <color name="theme_chi_yan_hong">#E91E63</color>
+    <!-- 主题相关 夜间-->
+    <color name="theme_guan_fang_lan_night">#094277</color>
+    <color name="theme_jing_dian_hong_night">#730E30</color>
+    <color name="theme_chi_gang_hei_night">#191919</color>
+    <color name="theme_wen_qing_ju_night">#7F5000</color>
+    <color name="theme_lv_cao_di_night">#456124</color>
+    <color name="theme_chen_jing_lv_night">#265728</color>
+    <color name="theme_ji_qing_zi_night">#321C5C</color>
+    <color name="theme_huo_mei_gui_night">#581356</color>
+    <color name="theme_chi_yan_hong_night">#730E30</color>
+
+    <!-- 分割线相关 -->
+    <color name="common_line_day">#eeeeee</color>
+    <color name="common_line_night">#2E2E2E</color>
+    <!-- 字体相关 -->
+    <color name="text_color_day">#333333</color>
+    <color name="text_color_night">#7F7F7F</color>
+
+
+    <!-- 用户举报百分比相关 -->
+    <color name="new_complaint">@color/common_red</color>
+    <color name="complaint_over">@color/common_white</color>
+    <color name="quality_evaluation">@color/common_green</color>
+
+
+    <!-- 加载动画相关 -->
+    <color name="loading_gif_rect_background">@color/black</color>
+
+    <!-- 右侧菜单相关 -->
+    <color name="default_blue">#00CAEB</color>
+
+    <!-- 弹出窗相关 -->
+
+    <!-- 地图相关 -->
+    <color name="cluster_blue">#30aadd</color>
+    <color name="cluster_green">#94c225</color>
+    <color name="cluster_orange">#fd8526</color>
+    <color name="cluster_red">#D90A00</color>
+    <color name="cluster_half_black">#80000000</color>
+    <color name="default_red">#eb3241</color>
+    <color name="default_red_50">#80eb3241</color>
+
+    <!-- 主界面相关 -->
+    <color name="main_status_bar_color">#1A2C6A</color>
+    <color name="default_blue_70">#B300CAEB</color>
+    <color name="default_blue_50">#8000CAEB</color>
+    <color name="default_blue_40">#6600CAEB</color>
+    <color name="default_blue_30">#4D00CAEB</color>
+    <color name="default_blue_20">#3300CAEB</color>
+    <color name="default_white">#ffffff</color>
+    <color name="default_white_90">#E6ffffff</color>
+    <color name="default_white_80">#CCffffff</color>
+    <color name="default_white_70">#B3ffffff</color>
+    <color name="default_white_60">#99ffffff</color>
+    <color name="default_white_50">#80ffffff</color>
+    <color name="default_white_40">#66ffffff</color>
+    <color name="default_white_35">#59ffffff</color>
+    <color name="default_white_30">#80ffffff</color>
+    <color name="default_white_25">#40ffffff</color>
+    <color name="default_white_20">#33ffffff</color>
+    <color name="default_white_10">#1Affffff</color>
+    <color name="default_white_5">#0Dffffff</color>
+    <color name="default_gray">#BBC0D4</color>
+    <color name="default_gray_70">#B3999999</color>
+    <color name="default_gray_10">#1A999999</color>
+    <color name="default_black">#000000</color>
+    <color name="default_black_70">#B3000000</color>
+    <color name="default_black_50">#80000000</color>
+    <color name="default_black_20">#33000000</color>
+    <color name="default_black_10">#1A000000</color>
+    <color name="default_black_5">#0D000000</color>
+    <color name="default_geo_color">#300075c8</color>
+
+    <!--wifi界面相关-->
+    <color name="wifi_itemtext_bgn">#8000c1de</color>
+    <color name="wifi_itemtext1_bgn">#00c1de</color>
+    <color name="wifi_itemtext_bgs">#191a1a</color>
+    <color name="wifi_edittext">#90FFFFFF</color>
+    <color name="wifi_more_active">#20c1dc</color>
+
+    <!-- 登录界面相关 -->
+    <color name="default_orange">#FD6721</color>
+    <color name="default_orange_70">#B3FD6721</color>
+    <color name="default_orange_50">#80FD6721</color>
+    <color name="default_green">#3BA409</color>
+    <color name="default_green_70">#B33BA409</color>
+
+    <!-- 远程推送相关 -->
+    <color name="marquee_background_color">#0779BD</color>
+
+    <!-- 主题相关 -->
+    <color name="theme_color">#ffbf12</color>
+    <color name="theme_color_95">#F2ffbf12</color>
+    <color name="theme_color_90">#E6ffbf12</color>
+    <color name="theme_color_85">#D9ffbf12</color>
+    <color name="theme_color_80">#CCffbf12</color>
+    <color name="theme_color_75">#BFffbf12</color>
+    <color name="theme_color_70">#B3ffbf12</color>
+    <color name="theme_color_65">#A6ffbf12</color>
+    <color name="theme_color_60">#99ffbf12</color>
+    <color name="theme_color_55">#8Cffbf12</color>
+    <color name="theme_color_50">#80ffbf12</color>
+    <color name="theme_color_45">#73ffbf12</color>
+    <color name="theme_color_40">#66ffbf12</color>
+    <color name="theme_color_35">#59ffbf12</color>
+    <color name="theme_color_30">#4Dffbf12</color>
+    <color name="theme_color_25">#40ffbf12</color>
+    <color name="theme_color_20">#33ffbf12</color>
+    <color name="theme_color_15">#26ffbf12</color>
+    <color name="theme_color_10">#1Affbf12</color>
+    <color name="theme_color_5">#0Dffbf12</color>
+
+    <!-- *****************与UI大师协商后的统一规范***************** -->
+    <!-- 展示型文字-->
+    <color name="text_color_default">#ffffff</color>
+    <color name="text_color_default_50">#80ffffff</color>
+    <!-- 菜单切换型文字（如：本地 网络盘） -->
+    <color name="tab_text_color_default">#E6ffbf12</color>
+    <color name="tab_text_color_focus">#ffffff</color>
+    <color name="tab_text_color_press">#ffffff</color>
+    <!-- 点击/按下型文字（如右下角：返回）-->
+    <color name="click_text_color_default">#ffffff</color>
+    <color name="click_text_color_focus">#ffffff</color>
+    <color name="click_text_color_press">#ffbf12</color>
+    <!-- 屏幕条目（精彩示例大屏列表）-->
+    <color name="wall_item_text_color_default">#333333</color>
+    <color name="wall_item_bg_color_default">#B3ffffff</color>
+    <color name="wall_item_bg_color_default_100">#ffffff</color>
+    <color name="wall_item_bg_color_default_35">#59ffffff</color>
+    <color name="wall_item_bg_color_default_50">#80ffffff</color>
+    <color name="wall_item_bg_color_default_25">#40ffffff</color>
+    <color name="wall_item_bg_color_default_20">#33ffffff</color>
+    <color name="wall_item_bg_color_focus">#ffffff</color>
+    <color name="wall_item_bg_color_press">#ffffff</color>
+    <!-- 资源条目（本地屏图片、视频文件等列表）-->
+    <color name="resource_item_text_color_default">#ffffff</color>
+    <color name="resource_item_bg_color_default">#1Affffff</color>
+    <!-- 标记图标（小数字点）-->
+    <color name="mark_color_default">#ffbf12</color>
+    <color name="mark_color_default_70">#B3ffbf12</color>
+    <color name="mark_text_color_default">#ffffff</color>
+    <!-- 普通按钮（如：设置中升级下的按钮）-->
+    <color name="btn_text_color_default">#ffffff</color>
+    <color name="btn_text_color_focus">#f83319</color>
+    <color name="btn_text_color_press">#f83319</color>
+    <color name="btn_text_color_disable">#40ffffff</color>
+    <color name="btn_bg_color_default">#80ffbf12</color>
+    <color name="btn_bg_color_focus">#ffffff</color>
+    <color name="btn_bg_color_press">#ffffff</color>
+    <color name="btn_bg_color_disable">#40ffbf12</color>
+    <!-- 长横条条目（如：网络设置条条和选择身份条条） -->
+    <color name="long_item_text_color_default">#ffffff</color>
+    <color name="long_item_text_color_focus">#f83319</color>
+    <color name="long_item_text_color_press">#f83319</color>
+    <color name="long_item_text_color_disable">#80ffffff</color>
+    <color name="long_item_bg_color_default">#80ffbf12</color>
+    <color name="long_item_bg_color_focus">#ffffff</color>
+    <color name="long_item_bg_color_press">#ffffff</color>
+    <!-- 输入框 -->
+    <color name="edit_text_color_default">#f83319</color>
+    <color name="edit_bg_color_default">#ffffff</color>
+    <color name="edit_stroke_color_default">#f83319</color>
+    <!-- 弹出窗/侧边栏 -->
+    <color name="dialog_title_color_default">#f83319</color>
+    <drawable name="dialog_drawable">#F2f83319</drawable>
+    <drawable name="dialog_content_drawable">#eeeeee</drawable>
+    <color name="dialog_btn_text_color_default">#ffffff</color>
+    <color name="dialog_btn_text_color_focus">#f83319</color>
+    <color name="dialog_btn_text_color_press">#f83319</color>
+    <color name="dialog_btn_text_color_disable">#40ffffff</color>
+    <color name="dialog_btn_bg_color_default">#f83319</color>
+    <color name="dialog_btn_bg_color_focus">#ffffff</color>
+    <color name="dialog_btn_bg_color_press">#ffffff</color>
+    <color name="dialog_btn_bg_color_disable">#40f83319</color>
+    <!-- 内容底(如：升级/通讯吗/关于) -->
+    <color name="content_cover_color">#33FFFFFF</color>
+    <!-- *****************与UI大师协商后的统一规范***************** -->
 </resources>

@@ -18,6 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".module.login.LoginActivity" />
+        <activity
+            android:name=".module.list.ListActivity"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>
