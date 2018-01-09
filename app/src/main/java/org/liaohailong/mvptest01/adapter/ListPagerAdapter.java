@@ -36,8 +36,7 @@ public class ListPagerAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-//        return Integer.MAX_VALUE;
-        return mData.size();
+        return Integer.MAX_VALUE;
     }
 
     @Override
