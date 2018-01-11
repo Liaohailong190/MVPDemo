@@ -10,6 +10,9 @@ import org.liaohailong.mvptest01.R;
 import org.liaohailong.mvptest01.adapter.ListPagerAdapter;
 import org.liaohailong.mvptest01.base.BaseActivity;
 import org.liaohailong.mvptest01.model.Student;
+import org.liaohailong.mvptest01.util.AttrHelper;
+import org.liaohailong.mvptest01.util.ViewHelper;
+import org.liaohailong.mvptest01.widget.PageTransformer.CoverFlowPageTransformer;
 
 import java.util.List;
 
@@ -40,6 +43,11 @@ public class ListActivity extends BaseActivity<ListPresenterImpl, ListContract.L
             mAdapter = new ListPagerAdapter();
             mAdapter.setData(data);
             mViewPager.setOffscreenPageLimit(5);
+//            int padding = AttrHelper.getWindowWidthPercent(0.4f);
+//            mViewPager.setPadding(padding, 0, padding, 0);
+            int width = AttrHelper.getWindowWidthPercent(0.2f);
+            ViewHelper.setWidth(mViewPager, width);
+            mViewPager.setPageTransformer(true, new CoverFlowPageTransformer());
             mViewPager.setAdapter(mAdapter);
         } else {
             mAdapter.setData(data);

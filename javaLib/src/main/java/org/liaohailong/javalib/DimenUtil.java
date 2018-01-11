@@ -1,4 +1,4 @@
-package org.liaohailong.mvptest01.widget;
+package org.liaohailong.javalib;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,24 +9,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * 基于xhdpi生成hdpi,xxhdpi,xxxhdpi文件夹
- * dp*ppi/160 = px
- * hdpi = 240
- * xhdpi = 320
- * xxhdpi = 480
- * xxxhdpi = 640
- */
-public class ReplaceDimens {
+public class DimenUtil {
 
-    public static final void main(String args[]) {
+    public static void main(String args[]){
         //模板
-        File file = new File("D:\\liao\\dimens.xml");
-        BufferedReader reader = null;
-        StringBuilder hdpi = new StringBuilder();
-        StringBuilder xhdpi_720 = new StringBuilder();
-        StringBuilder xxhdpi_1080 = new StringBuilder();
-        StringBuilder xxxhdpi = new StringBuilder();
+        File file = new File("d:\\liao\\dimens.xml");
+        BufferedReader reader;
+        StringBuilder sw360 = new StringBuilder(); //适配4.7,5寸的手机，2k屏手机
+        StringBuilder sw540 = new StringBuilder();//适配平板
         try {
             reader = new BufferedReader(new FileReader(file));
             String tempString;
@@ -36,36 +26,27 @@ public class ReplaceDimens {
                     String end = tempString.substring(tempString.lastIndexOf("<") - 2);
                     //截取<dimen></dimen>标签内的内容，从>右括号开始，到左括号减2，取得配置的数字
                     Float num = Float.parseFloat(tempString.substring(tempString.indexOf(">") + 1,
-                            tempString.indexOf("</dimen>") - 2));
+                                    tempString.indexOf("</dimen>") - 2));
                     //根据不同的尺寸，计算新的值，拼接新的字符串，并且结尾处换行。
-                    hdpi.append(start).append(getDimenSp(num, 1.0f)).append(end).append("\r\n");
-                    xhdpi_720.append(start).append(getDimenSp(num, 1.0f)).append(end).append("\r\n");
-                    xxhdpi_1080.append(start).append(getDimenSp(num, 0.66f)).append(end).append("\r\n");
-                    xxxhdpi.append(start).append(getDimenSp(num, 0.5f)).append(end).append("\r\n");
+                    sw360.append(start).append(getDimenSp(num,0.66f)).append(end).append("\r\n");
+                    sw540.append(start).append(getDimenSp(num ,1f)).append(end).append("\r\n");
                 } else {
-                    hdpi.append(tempString).append("\r\n");
-                    xhdpi_720.append(tempString).append("\r\n");
-                    xxhdpi_1080.append(tempString).append("\r\n");
-                    xxxhdpi.append(tempString).append("\r\n");
+                    sw360.append(tempString).append("\r\n");
+                    sw540.append(tempString).append("\r\n");
                 }
             }
             reader.close();
             //写入文件
-            String hdpiFile = generateFile("D:\\liao\\values-hdpi-1280x720\\dimens.xml");
-            String xhdpiFile = generateFile("D:\\liao\\values-xhdpi-1920x1080\\dimens.xml");
-            String xxhdpiFile = generateFile("D:\\liao\\values-xxhdpi-1920x1080\\dimens.xml");
-            String xxxhdpiFile = generateFile("D:\\liao\\values-xxxhdpi\\dimens.xml");
+            String sw360File = generateFile("d:\\liao\\values-sw360dp\\dimens.xml");
+            String sw540File = generateFile("d:\\liao\\values-sw540dp\\dimens.xml");
 
-            writeFile(hdpiFile, hdpi.toString());
-            writeFile(xhdpiFile, xhdpi_720.toString());
-            writeFile(xxhdpiFile, xxhdpi_1080.toString());
-            writeFile(xxxhdpiFile, xxxhdpi.toString());
+            writeFile(sw360File, sw360.toString());
+            writeFile(sw540File, sw540.toString());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     /**
@@ -84,15 +65,14 @@ public class ReplaceDimens {
 
     /**
      * 生成文件
-     *
      * @param filePah
      */
     private static String generateFile(String filePah) throws IOException {
         File file = new File(filePah);
-        if (!file.getParentFile().exists()) {
+        if (!file.getParentFile().exists()){
             file.getParentFile().mkdirs();
         }
-        if (!file.exists()) {
+        if (!file.exists()){
             file.createNewFile();
         }
         return filePah;
@@ -100,7 +80,6 @@ public class ReplaceDimens {
 
     /**
      * 写入文件
-     *
      * @param file
      * @param text
      */

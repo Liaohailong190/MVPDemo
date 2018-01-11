@@ -1,6 +1,6 @@
 package org.liaohailong.mvptest01.module.list;
 
-import org.liaohailong.mvptest01.ColorHelper;
+import org.liaohailong.mvptest01.util.ColorHelper;
 import org.liaohailong.mvptest01.base.BasePresenter;
 import org.liaohailong.mvptest01.model.Student;
 

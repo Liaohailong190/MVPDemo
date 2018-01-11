@@ -1,4 +1,4 @@
-package org.liaohailong.mvptest01;
+package org.liaohailong.mvptest01.util;
 
 import android.graphics.Color;
 import android.support.annotation.ColorInt;

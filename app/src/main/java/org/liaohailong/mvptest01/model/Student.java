@@ -3,7 +3,6 @@ package org.liaohailong.mvptest01.model;
 import android.graphics.Color;
 import android.support.annotation.ColorInt;
 
-import org.liaohailong.mvptest01.ColorHelper;
 import org.liaohailong.mvptest01.adapter.ListPagerAdapter;
 
 /**
