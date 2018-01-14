@@ -3,7 +3,6 @@ package org.liaohailong.javalib;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,7 +12,7 @@ public class DimenUtil {
 
     public static void main(String args[]){
         //模板
-        File file = new File("d:\\liao\\dimens.xml");
+        File file = new File("D:\\liao\\workspace01\\govservicev2-android\\app\\src\\main\\res\\values\\dimens.xml");
         BufferedReader reader;
         StringBuilder sw360 = new StringBuilder(); //适配4.7,5寸的手机，2k屏手机
         StringBuilder sw540 = new StringBuilder();//适配平板
@@ -37,14 +36,12 @@ public class DimenUtil {
             }
             reader.close();
             //写入文件
-            String sw360File = generateFile("d:\\liao\\values-sw360dp\\dimens.xml");
-            String sw540File = generateFile("d:\\liao\\values-sw540dp\\dimens.xml");
+            String sw360File = generateFile("D:\\liao\\workspace01\\govservicev2-android\\app\\src\\main\\res\\values-sw360dp\\dimens.xml");
+            String sw540File = generateFile("D:\\liao\\workspace01\\govservicev2-android\\app\\src\\main\\res\\values-sw540dp\\dimens.xml");
 
             writeFile(sw360File, sw360.toString());
             writeFile(sw540File, sw540.toString());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
