@@ -5,12 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.request.RequestOptions;
 
 import org.liaohailong.mvptest01.R;
 import org.liaohailong.mvptest01.base.BaseActivity;
 import org.liaohailong.mvptest01.model.UserInfo;
 import org.liaohailong.mvptest01.util.ToastUtil;
+import org.liaohailong.mvptest01.widget.GlideApp;
 
 /**
  * 登录界面
@@ -24,6 +28,7 @@ public class LoginActivity extends BaseActivity<LoginPresenterImpl, LoginContrac
     }
 
     private TextView mLoginStatusTxt;
+    private ImageView mImageView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,6 +45,12 @@ public class LoginActivity extends BaseActivity<LoginPresenterImpl, LoginContrac
             }
         });
         mLoginStatusTxt = findViewById(R.id.login_status_txt);
+        mImageView = findViewById(R.id.image_view);
+        GlideApp.with(this)
+                .applyDefaultRequestOptions(new RequestOptions())
+                .asBitmap()
+                .load("")
+                .into(mImageView);
     }
 
     @Override

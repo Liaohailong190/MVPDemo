@@ -27,7 +27,7 @@ public class DimenUtil {
                     Float num = Float.parseFloat(tempString.substring(tempString.indexOf(">") + 1,
                                     tempString.indexOf("</dimen>") - 2));
                     //根据不同的尺寸，计算新的值，拼接新的字符串，并且结尾处换行。
-                    sw360.append(start).append(getDimenSp(num,0.66f)).append(end).append("\r\n");
+                    sw360.append(start).append(getDimenSp(num,0.72f)).append(end).append("\r\n");
                     sw540.append(start).append(getDimenSp(num ,1f)).append(end).append("\r\n");
                 } else {
                     sw360.append(tempString).append("\r\n");

@@ -1,11 +1,7 @@
 package org.liaohailong.mvptest01.module.login;
 
-import android.os.Handler;
-
 import org.liaohailong.mvptest01.base.BasePresenter;
 import org.liaohailong.mvptest01.model.UserInfo;
-
-import java.util.Random;
 
 /**
  * 登录控制层实现
