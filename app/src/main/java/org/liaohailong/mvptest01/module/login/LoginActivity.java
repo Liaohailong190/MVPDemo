@@ -27,6 +27,7 @@ public class LoginActivity extends BaseActivity<LoginPresenterImpl, LoginContrac
         context.startActivity(intent);
     }
 
+    private static final String TEST_IMAGE_URL = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505054331352&di=67367353f3ac52e7cdaca7221de9c39d&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20161003%2F599d93c935d646b9a1b7e8adb049a8fa_th.jpg";
     private TextView mLoginStatusTxt;
     private ImageView mImageView;
 
@@ -46,11 +47,16 @@ public class LoginActivity extends BaseActivity<LoginPresenterImpl, LoginContrac
         });
         mLoginStatusTxt = findViewById(R.id.login_status_txt);
         mImageView = findViewById(R.id.image_view);
-        GlideApp.with(this)
-                .applyDefaultRequestOptions(new RequestOptions())
-                .asBitmap()
-                .load("")
-                .into(mImageView);
+        mImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GlideApp.with(LoginActivity.this)
+                        .applyDefaultRequestOptions(new RequestOptions())
+                        .asBitmap()
+                        .load(TEST_IMAGE_URL)
+                        .into(mImageView);
+            }
+        });
     }
 
     @Override
